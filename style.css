@@ -1,0 +1,39 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  /* font-family: 'Anonymous Pro'; */
+  font-family: 'Courier'; 
+  color: #FFF;
+}
+
+canvas {
+  display: block;
+}
+
+video {
+  clip-path: circle(0px at center);
+  position: absolute;
+  top:0px;
+  z-index:2;
+}
+
+#mydiv {
+  position: absolute;
+  z-index: 9;
+  background-color: transparent;
+  border: 2px solid red;
+  width: 250px;
+  height:250px;
+  cursor: move;
+  cursor: url(images/grab.cur);
+  cursor: grab;
+}
+
+
+#mydiv.dragging {
+  border: 5px solid blue!important;
+  cursor: grabbing!important;
+    cursor: -moz-grabbing!important;
+    cursor: -webkit-grabbing!important;
+}
